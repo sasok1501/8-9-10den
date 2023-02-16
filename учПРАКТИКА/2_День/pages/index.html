@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css.css">
+    <title>Главная</title>
+
+</head>
+<body>
+    <header>
+<p>
+        <a href="index.html"><img src="..\img\123.svg" alt="" class="logo"></a>
+    </p>
+    <div class="menu">
+        <a href="index.html" class="MENUtext">Главная</a>
+        <a href="dostig.html" class="MENUtext">Достижения</a>
+        <a href="kontacti.html" class="MENUtext">Контакты</a>
+        <a href="onas.html" class="MENUtext">Наше сообщество</a>
+    </div>
+
+    </header>
+    
+    <div class="Vvedenie"> <br>
+        <img src="..\img\st.jpg" alt="" class="staraia">
+        <p>
+           <b>Извиняюсь за фото, ныняшней группы нет, к сожалению.</b> 
+            <br>
+            Приветствую вас на нашем сайте, сейчас я расскажу вам о нашeй солянке ИС-302.
+            <br> В нашей группе достаточно людей с разными способностями,
+            <br> на данном сайте вы можете с ними ознакомиться.
+            <br> Оставайтесь с нами,<br> это будет очень  веселое и увлекательное путешествие.
+        </p>
+    </div>
+<hr>
+<div class="btn-up btn-up_hide"></div>
+<script>
+    const btnUp = {
+el: document.querySelector('.btn-up'),
+show() {
+// удалим у кнопки класс btn-up_hide
+this.el.classList.remove('btn-up_hide');
+},
+hide() {
+// добавим к кнопке класс btn-up_hide
+this.el.classList.add('btn-up_hide');
+},
+addEventListener() {
+// при прокрутке содержимого страницы
+window.addEventListener('scroll', () => {
+  // определяем величину прокрутки
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+  // если страница прокручена больше чем на 200px, то делаем кнопку видимой, иначе скрываем
+  scrollY > 200 ? this.show() : this.hide();
+});
+// при нажатии на кнопку .btn-up
+document.querySelector('.btn-up').onclick = () => {
+  // переместим в начало страницы
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+}
+}
+
+btnUp.addEventListener();
+</script>
+
+
+
+
+
+    <p class="prostoTEXT">
+        
+     Но начало ознакомимся со мной, так как я создатель этого твоерения, <br> и в принципе так нужно. <br> <br>
+     <img src="..\img\ia.jpg" alt="" class="ia">
+     <br>
+     О, а я это я, прошу просить и жаловать. <br>
+     <h2 align="center">Немного обо мне:</h2>
+     <p class="prostoTEXT">
+        — Гений, миллиардер, плэйбой, филантроп. <br>
+        На самом деле, веб-разработчик, который очень поздно понял,
+        <br> что это была его ошибка.
+        <br>
+        Учусь, почти работаю, живу (пытаюсь). <br>
+        
+     </p>
+    </p>
+
+<br>
+    <footer>
+        <div class="menu">
+            <a href="index.html" class="MENUtext">Главная</a>
+            <a href="dostig.html" class="MENUtext">Достижения</a>
+            <a href="kontacti.html" class="MENUtext">Контакты</a>
+            <a href="onas.html" class="MENUtext">Наше сообщество</a>
+        </div>
+        <p class="prostoTEXT">
+             Все права защищены мной и поим сообществом. <br>
+             По всем вопросам звоните : 8-XXX-XXX-XX-XX. <br>
+              Работаем круглосуточно. <br>
+              898255, Амурская область, город Зарайск, пр. Балканская, 42
+        </p><br>
+    </footer>
+    
+</body>
+</html>

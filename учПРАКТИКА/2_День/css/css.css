@@ -1,0 +1,340 @@
+*{
+    font-family: "Garamond", Times, serif;
+}
+
+
+.menu{
+    text-align:center;
+    background-color: #CFCFCF;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.logo{
+    width: 250px;
+    height: 250px;
+    display:block;
+    margin:auto;
+    }
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+a:hover {
+    background-color: black; 
+    text-decoration: none; 
+    color: white;
+    border-radius: 10px;
+   }
+
+body{
+    margin: 0;
+    background: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614582920_85-p-belii-fon-sovremennii-95.jpg);
+}
+
+.MENUtext{
+    font-size: 18pt;
+    margin-right: 100px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.Vvedenie{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.prostoTEXT{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20pt;
+} 
+/*  ДЛЯ ВСЕХ ТЕКСТОВ */
+
+.ia{
+    margin: 0 auto;
+    width: 350px;
+    border-radius: 50px;
+    
+}
+
+.staraia{
+    margin: 0 auto;
+    width: 500px;
+}
+
+footer{
+    background-color: #CFCFCF;
+    border-color: black #CFCFCF; /* Цвет границы */ 
+    border-style: solid;
+}
+
+hr{
+    margin: 0;
+}
+
+
+
+
+/* СТРЕЛКА */
+
+.btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: black;
+    /* расстояние от правого края окна браузера */
+    right: 20px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: black; /* цвет заднего фона при наведении */
+    }
+  }
+
+
+/*  */
+
+.vsekartinki{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/*  */
+
+.container_slider_css{
+    margin:50px auto;
+    width:500px;
+    height:500px;
+    overflow:hidden;
+    position:relative
+}
+.photo_slider_css{
+    position:absolute;
+    animation:round 16s infinite;
+    opacity:0;
+    width:100%
+}
+@keyframes round {
+25%{opacity:1}
+40%{opacity:0}
+}
+img:nth-child(1){
+    animation-delay:12s
+}
+img:nth-child(2){
+    animation-delay:8s
+}
+img:nth-child(3){
+    animation-delay:4s
+}
+img:nth-child(4){
+    animation-delay:0s
+}
+
+@media(min-width:0px) and (max-width:320px) {
+.container_slider_css{width:80%;}
+}
+@media(min-width:321px) and (max-width:480px) {
+.container_slider_css{width:80%;}
+}
+
+
+/*  */
+
+.profVSE{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.albom{
+    width: 25%;
+}
+
+.treki{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.dostme{
+    width: 40%;
+}
+
+.kontKART{
+    margin: 0 auto;
+    text-align: center;
+    width: 20%;
+}
+
+
+
+
+
+/* Стили всплывающего окна по-умолчанию */
+.modal {
+    position: flex; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: none; /* фон */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* При отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* отображение окна по центру */
+  }
+}
+/* Стили для блока с контентом окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* Стили заголовка окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Стили кнопки "х" ("Закрыть")  */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* Стили для закрывающей кнопки в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* Стили блока основного содержимого окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css.css">
+    <title>Контакты</title>
+    
+</head>
+<body>
+    <header>
+        <p>
+                <a href="index.html"><img src="..\img\123.svg" alt="" class="logo"></a>
+            </p>
+            <div class="menu">
+                <a href="index.html" class="MENUtext">Главная</a>
+                <a href="dostig.html" class="MENUtext">Достижения</a>
+                <a href="kontacti.html" class="MENUtext">Контакты</a>
+                <a href="onas.html" class="MENUtext">Наше сообщество</a>
+            </div>
+            </header>
+            <br>
+           <p class="prostoTEXT">
+            <img src="..\img\m.jpg" class="kontKART"> <br>
+            Это наш любимый куратор, Минзаля Зайнагитдиновна, мы ее очень сильно любим, <br>
+            но из-за нас ей очень много попадает, <br>
+            поэтому она говорит, что больше никогда не будет брать программистов.
+            <br>
+            Обычно с ней связываются, когда нас нет на парах, <br>
+            а если нас нет, то она может позвонить нашим родителям. <br>
+            Номер телена: <b>недоступен.</b> 
+           </p>
+
+           <p class="prostoTEXT"> 
+             <img src="..\img\n.jpg" class="kontKART"><br> 
+            Это наш староста группы, Никита Бузуев, <br>
+            он ведет дневник успеваемости нашей группы, <br>
+            а также следит за нашими прогулами. <br>
+            Как по мне ему не хватает твердости. <br>
+            Номер телена: <b>8-951-819-97-87</b> 
+           </p>
+
+
+
+<p class="prostoTEXT"> 
+    <img src="..\img\zam.jpg" class="kontKART"><br> 
+   Это зам. старосты, Анастасия Титенок,<br>
+   очень примерная девочка, не пропусает пары, <br>
+   хорошо учится, а также хороший и добрый человек.<br>
+   Когда нет Никиты, она бегает за журналом.<br>  
+   Номер телена: <b>8-922-734-28-72</b> 
+  </p>
+
+
+  <p class="prostoTEXT"> 
+    
+    <img src="..\img\fiz.jpg" class="kontKART"><br> 
+   Это физорг группы, Старов Александр,<br>
+   в его обязанности входит: ходить на пары, <br>
+   и отвечать за набор группы на соревнования. <br>
+   Номер телена: <b>8-950-727-85-77</b> 
+  </p>
+
+<br>
+
+<a href="php.php" class="prostoTEXT">Массив группы</a>
+
+<br>
+
+
+<!-- HTML модального окна -->
+<div id="openModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Список нашей группы</h3>
+          <a href="#close" title="Close" class="close">×</a>
+        </div>
+        <div class="modal-body">    
+          <ul>
+            <li>Абдрахманов Джалиль</li>
+            <li>Казанцев Максим</li>
+            <li>Колыбина Анна</li>
+              <li>Барышников Андрей</li>
+              <li>Войцеховский Артем</li>
+              <li>Киселев Михаил</li>
+              <li>Манаев Евгений</li>
+              <li>Попов Сергей</li>
+              <li>Томашевский Владислав</li>
+              <li>Чернышёв Николай</li>
+              <li>Титенок Анастасия</li>
+              <li>Пахомов Ярослав</li>
+              <li>Колыбина Анна</li>
+              <li>Вакилов Ильяс</li>
+              <li>Гуляев Михаил</li>
+              <li>Койнов Дмитрий</li>
+              <li>Бузуев Никита</li>
+              <li>Мисник Елена</li>
+              <li>Старов Александр</li>
+              <li>Хайруллин Артур</li>
+              <li>Привалов Владимир</li>
+              <li>Фалалеев Никита</li>
+              <li>Вильгаук Анастасия</li>
+              <li>Евгений Лукьянов</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <!-- HTML кнопки -->
+   <p  class="prostoTEXT">
+  <a href="#openModal" class="prostoTEXT">Открыть список группы</a>
+   </p>
+   
+<br>
+
+        
+        <div class="btn-up btn-up_hide"></div>
+        <script>
+            const btnUp = {
+        el: document.querySelector('.btn-up'),
+        show() {
+        // удалим у кнопки класс btn-up_hide
+        this.el.classList.remove('btn-up_hide');
+        },
+        hide() {
+        // добавим к кнопке класс btn-up_hide
+        this.el.classList.add('btn-up_hide');
+        },
+        addEventListener() {
+        // при прокрутке содержимого страницы
+        window.addEventListener('scroll', () => {
+          // определяем величину прокрутки
+          const scrollY = window.scrollY || document.documentElement.scrollTop;
+          // если страница прокручена больше чем на 200px, то делаем кнопку видимой, иначе скрываем
+          scrollY > 200 ? this.show() : this.hide();
+        });
+        // при нажатии на кнопку .btn-up
+        document.querySelector('.btn-up').onclick = () => {
+          // переместим в начало страницы
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+        }
+        }
+        
+        btnUp.addEventListener();
+        </script>
+
+    <footer>
+        <div class="menu">
+            <a href="index.html" class="MENUtext">Главная</a>
+            <a href="dostig.html" class="MENUtext">Достижения</a>
+            <a href="kontacti.html" class="MENUtext">Контакты</a>
+            <a href="onas.html" class="MENUtext">Наше сообщество</a>
+        </div>
+        <p class="prostoTEXT">
+             Все права защищены мной и поим сообществом. <br>
+             По всем вопросам звоните : 8-XXX-XXX-XX-XX. <br>
+              Работаем круглосуточно. <br>
+              898255, Амурская область, город Зарайск, пр. Балканская, 42
+        </p><br>
+    </footer>
+</body>
+</html>

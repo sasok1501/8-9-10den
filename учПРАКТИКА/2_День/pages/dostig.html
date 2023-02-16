@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css.css">
+    <title>Достижения</title>
+</head>
+<body>
+    <header>
+        <p>
+                <a href="index.html"><img src="..\img\123.svg" alt="" class="logo"></a>
+            </p>
+            <div class="menu">
+                <a href="index.html" class="MENUtext">Главная</a>
+                <a href="dostig.html" class="MENUtext">Достижения</a>
+                <a href="kontacti.html" class="MENUtext">Контакты</a>
+                <a href="onas.html" class="MENUtext">Наше сообщество</a>
+            </div>
+            </header>
+            <br>
+            <p class="prostoTEXT">У студентов нашей группы есть множество увлечений, 
+                и сейчас я расскажу про них, <br>
+                а также про соревнования в колледже.<br><br>
+                <img src="..\img\albom.png" class="albom">
+               <p class="prostoTEXT"> <a href="https://vk.com/public208810704">MAFAR</a> (Никита Бузуев) - Lucky Boy, альбом 
+                <br> слушайте НА ВСЕХ ПЛОЩАДКАХ.
+                <br> Вот один трек из этого <a href="https://vk.com/music/album/-2000744641_14744641_4cde55c20d557d4f8f">альбома:</a>  MAFAR - Усилия. <br>
+                А на втором треке, фит с Артемом (Liza Lanus). <br>
+            Бесплатная реклама альбома, Никита свяжись со мной!
+            <br> Извиняюсь заранее за кровь в ушах.</p> 
+                <div class="treki">
+                    <audio controls 
+        src="..\mp3\MAFAR - Усилия.mp3"></audio>
+        <audio controls 
+        src="..\mp3\MAFAR - Sekssss (feat. Liza Lanus).mp3"></audio>
+    </div>
+    <br>
+    <div id="vk_playlist_-2000744641_14744641"></div>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+    <script type="text/javascript">
+      (function() {
+        VK.Widgets.Playlist("vk_playlist_-2000744641_14744641", -2000744641, 14744641,'9b36ea07c1f4c1e8cc');
+      }());
+    </script>
+                </p>
+                <p class="prostoTEXT">
+                    Также мы очень талантливы, <br>
+                     но бесполезны в спорте, так как, <br>
+                     мы никогда не может занять 1 место. <br>
+                     Вот напрмер бегут 3 колеки) <br> <br>
+                     <img src="..\img\d6.jpg" class="dostme">
+                </p>
+                <br>
+                <p class="prostoTEXT">
+                    А вот, чем мы занимались весь первый курс. <br>
+                    Молодые ребята, смеются, пока они не знают, что их ждет дальше.
+                    <br> <br>
+                    <img src="..\img\d7.jpg" class="dostme">
+                </p>
+<br>
+<p class="prostoTEXT">
+    Также мы АСУЖДЕМ запад. <br><br>
+    <img src="..\img\d5.jpg" class="dostme">
+</p>
+<br>
+ <p class="prostoTEXT">
+    Играли в войнушки, 3 танкиста смотрят друг на друга.<br><br>
+    <img src="..\img\d4.jpg" class="dostme">
+ </p>
+ <br>
+ <p class="prostoTEXT">
+   Пытались завести с толкача старушку, у Темы не хватило сил. 
+   <br> А михаил переиграл в NFS. <br><br>
+    <img src="..\img\d3.jpg" class="dostme">
+ </p>
+<br>
+<p class="prostoTEXT">
+    А это наши любимые конкурсы, 
+    <br> и легчайшие оценки, как мы их любим.<br><br>
+     <img src="..\img\d1.jpg" class="dostme">
+  </p>
+ <br>
+ <p class="prostoTEXT">
+    А недавно у нас проходил турнир по киберспорту, <br>
+     в котором мы вылетели на первом этапе, ничего,<br>
+     мы вернемся и будем еще сильнее. <br>
+     Главное не сдаваться! <br><br>
+     <img src="..\img\d2.jpg" class="dostme">
+  </p>
+ <br>
+ <p class="prostoTEXT">
+    Пожалуй на этом все, спасибо за внимание,<br>
+     надеюсь вам понравилось.
+
+ </p>
+        <br>
+
+        <div class="btn-up btn-up_hide"></div>
+        <script>
+            const btnUp = {
+        el: document.querySelector('.btn-up'),
+        show() {
+        // удалим у кнопки класс btn-up_hide
+        this.el.classList.remove('btn-up_hide');
+        },
+        hide() {
+        // добавим к кнопке класс btn-up_hide
+        this.el.classList.add('btn-up_hide');
+        },
+        addEventListener() {
+        // при прокрутке содержимого страницы
+        window.addEventListener('scroll', () => {
+          // определяем величину прокрутки
+          const scrollY = window.scrollY || document.documentElement.scrollTop;
+          // если страница прокручена больше чем на 200px, то делаем кнопку видимой, иначе скрываем
+          scrollY > 200 ? this.show() : this.hide();
+        });
+        // при нажатии на кнопку .btn-up
+        document.querySelector('.btn-up').onclick = () => {
+          // переместим в начало страницы
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+        }
+        }
+        
+        btnUp.addEventListener();
+        </script>
+
+    <footer>
+        <div class="menu">
+            <a href="index.html" class="MENUtext">Главная</a>
+            <a href="dostig.html" class="MENUtext">Достижения</a>
+            <a href="kontacti.html" class="MENUtext">Контакты</a>
+            <a href="onas.html" class="MENUtext">Наше сообщество</a>
+        </div>
+        <p class="prostoTEXT">
+             Все права защищены мной и поим сообществом. <br>
+             По всем вопросам звоните : 8-XXX-XXX-XX-XX. <br>
+              Работаем круглосуточно. <br>
+              898255, Амурская область, город Зарайск, пр. Балканская, 42
+        </p><br>
+    </footer>
+</body>
+</html>
